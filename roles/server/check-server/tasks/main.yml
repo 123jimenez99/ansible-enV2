@@ -1,0 +1,3 @@
+- name: Check if ping again the server
+  uri:
+    url: "{{ server1 }}"

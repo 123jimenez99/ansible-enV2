@@ -1,0 +1,11 @@
+---
+- hosts: server
+  become: yes
+
+  roles:
+    - role: 'roles/common/apt-maintenance'
+    - role: 'roles/deploy/apache'
+
+- hosts: clients
+  roles:
+    - role: 'roles/server/check-server'

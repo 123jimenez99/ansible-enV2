@@ -1,0 +1,12 @@
+- name: Update repos
+  apt:
+    update_cache: yes
+
+- name: Upgrade packages
+  apt:
+    name: '*'
+    state: latest
+
+- name: Remove unused dependencies
+  apt:
+    autoremove: yes

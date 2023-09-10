@@ -1,0 +1,15 @@
+  - name: Install Apache
+    apt:
+      name: apache2
+      state: present
+
+  - name: Copy the file to the web server
+    copy:
+      src: ../files/index.html
+      dest: /var/www/html
+      mode: '0755'
+
+  - name: Restart Apache
+    service:
+      name: apache2
+      state: restarted
