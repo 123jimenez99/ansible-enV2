@@ -1,5 +1,5 @@
 ## ansible-enV2
-A small yet modular, scalable and reusable environment/template for learning Ansible
+A small yet modular, scalable and reusable environment/template for learning Ansible.
 
 ### What happened to the original Ansible environment?
 It was pretty terrible.
