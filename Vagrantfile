@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/bookworm64"
   config.ssh.insert_key = false
+  config.ssh.private_key_path = ['~/.vagrant.d/insecure_private_key']
   config.ssh.username = "vagrant"
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
@@ -10,9 +11,9 @@ Vagrant.configure("2") do |config|
   end
 
   hosts = {
-    "host1" => "192.168.18.200",
-    "host2" => "192.168.18.201",
-    "server1" => "192.168.18.202"
+    "host1" => "192.168.11.200",
+    "host2" => "192.168.11.201",
+    "server1" => "192.168.11.202"
   }
 
   config.vm.define "server1" do |server1|
