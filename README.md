@@ -13,3 +13,6 @@ Apart from learning Ansible, I want to be as prepared as possible (have a lot of
 
 ### Do I expect contributions to this project?
 I don't expect any contributions. Although it would be great if someone comes up with interesting ideas/tasks/playbooks so everyone can benefit from it.
+
+### PrepareWindowsForAnsible.ps1 doesn't wont launch!
+Just execute this command: ```powershell.exe -ExecutionPolicy Bypass -File "Whereveryourpathmightbe"\PrepareWindowsForAnsible.ps1``` Example: ```powershell.exe -ExecutionPolicy Bypass -File 'C:\Users\test\Desktop\PrepareWindowsForAnsible.ps1'``` 
